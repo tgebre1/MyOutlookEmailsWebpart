@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "teshe-outlook-mail-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tesheOutlookMail/TesheOutlookMailWebPart.js",
+          "manifest": "./src/webparts/tesheOutlookMail/TesheOutlookMailWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js",
+    "bootstrap": {
+      "path": "https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
+      "globalName": "bootstrapJS"
+    },
+    "context-menu": "https://www.jqueryscript.net/demo/Material-Design-Context-Menu-jQuery-3Dot-Context-Menu/includes/context-menu.js",
+    "stylesheet": "https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/paper/bootstrap.min.css"
+  },
+  "localizedResources": {
+    "TesheOutlookMailWebPartStrings": "lib/webparts/tesheOutlookMail/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}

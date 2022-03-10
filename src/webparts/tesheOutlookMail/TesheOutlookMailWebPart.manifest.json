@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "08319547-ec65-4a4e-bf54-168a0b6e22d7",
+  "alias": "TesheOutlookMailWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "SharePointFullPage", "TeamsTab"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [
+    {
+      "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+      "group": { "default": "Other" },
+      "title": { "default": "Teshe Outlook Mail" },
+      "description": { "default": "TesheOutlookMail description" },
+      "officeFabricIconFontName": "OutlookLogo16",
+      "properties": {
+        "title": "Teshe Outlook Mail",
+        "nrOfMessages": 15,
+        "showInboxOnly": true,
+        "iconPicker": ""
+      }
+    }
+  ]
+}

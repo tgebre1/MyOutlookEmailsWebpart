@@ -1,0 +1,26 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "my-outlook-teshe-client-side-solution",
+    "id": "1b764b8f-917c-45ba-a6a2-17436dcdb511",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Mail.ReadWrite, Mail.Send"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/my-outlook-teshe.sppkg"
+  }
+}
